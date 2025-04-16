@@ -1,12 +1,10 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Footer from '@/components/ui/Footer';
 
 export default function Layout({ children }) {
   return (
-    <>
-      <Header />
+    <div className='layout-container'>
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
