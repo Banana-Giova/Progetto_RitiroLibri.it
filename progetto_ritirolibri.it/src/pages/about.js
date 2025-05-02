@@ -5,8 +5,8 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>RitiroLibri.it | Chi siamo</title>
-        <meta name="description" content="Scopri chi siamo e cosa facciamo" />
+        <title>RitiroLibri.it | Chi Siamo</title>
+        <meta name="description" content="Scopri chi siamo, cosa facciamo e la nostra missione" />
       </Head>
       <h1>Chi siamo</h1>
       <p>Siamo un&apos;azienda innovativa...</p>

@@ -5,7 +5,8 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>RitiroLibri.it | Contatti</title>
+        <title>RitiroLibri.it | Contattaci</title>
+        <meta name="description" content="Contattaci ora!" />
       </Head>
       <h1>Contattaci</h1>
       <p>Email: info@iltuobrand.com</p>

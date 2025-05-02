@@ -9,9 +9,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
+    { href: '/', label: 'Home' },
     { href: '/come_funziona', label: 'Come Funziona?' },
-    { href: '/contact', label: 'Contattaci' },
     { href: '/about', label: 'Chi Siamo' },
+    { href: '/contact', label: 'Contattaci' },
   ];
 
   return (

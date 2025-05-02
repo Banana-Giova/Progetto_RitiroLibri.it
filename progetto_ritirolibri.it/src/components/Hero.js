@@ -7,7 +7,6 @@ import Logo from "@/assets/images/logo_ritirolibriit.png";
 
 const Hero = () => {
 
-
   const features = [
     {
       Icon: Clock,
@@ -53,7 +52,7 @@ const Hero = () => {
             <Camera className="icon" />
             &nbsp;Prenota il ritiro gratuito
           </Button>
-          <Button href="/come-funziona" className="secondary-cta" type="secondary">
+          <Button href="/come_funziona" className="secondary-cta" type="secondary">
             <ArrowBigRight className="icon" />
             &nbsp;Scopri come funziona
           </Button>

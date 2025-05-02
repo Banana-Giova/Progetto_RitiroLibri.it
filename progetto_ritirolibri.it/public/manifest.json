@@ -1,0 +1,32 @@
+{
+    "name": "RitiroLibri.it | Ritiro Gratis Libri Usati a Domicilio",
+    "short_name": "RitiroLibri.it",
+    "description": "Hai libri usati da smaltire? RitiroLibri.it li ritira gratuitamente a casa tua. Contattaci ora per liberare spazio velocemente!",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#27ae60",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/icon.ico",
+        "sizes": "64x64",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "/logo_ritirolibriit_32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo_ritirolibriit_16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo_ritirolibriit_180x180.png",
+        "sizes": "180x180",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }

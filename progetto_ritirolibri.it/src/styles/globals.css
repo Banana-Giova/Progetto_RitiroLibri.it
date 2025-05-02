@@ -58,6 +58,7 @@ html, body {
   font-weight: 900 !important;
   display: block;
   line-height: 1;
+  font-family: 'San Francisco', Arial, Helvetica, sans-serif;
   letter-spacing: -0.05em;
   margin-bottom: 0.5rem;
   color: #1a1a1a;
@@ -71,6 +72,7 @@ html, body {
   display: inline-block;
   font-size: clamp(3rem, 10vw, 5.5rem);
   font-weight: 900;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   text-shadow: 0 2px 8px rgba(23, 136, 70, 0.3);
   animation: text-pulse 2s ease-in-out infinite;
@@ -128,7 +130,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: 0.2s ease, transform 0.2s ease;
 }
 
 .feature-card:hover {
@@ -177,7 +179,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'San Francisco', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   font-weight: 500;
   height: 3.5rem;
@@ -188,7 +190,7 @@ html, body {
 
 .primary:hover {
   box-shadow: rgba(46, 204, 113, 0.6) 0 0 20px;
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.01);
 }
 
 .secondary {
@@ -210,7 +212,7 @@ html, body {
 
 .secondary:hover {
   box-shadow: rgba(46, 204, 113, 0.4) 0 0 20px;
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.01);
 }
 
 .primary,
@@ -233,6 +235,7 @@ html, body {
 
 .navbar-inner {
   max-width: 1200px;
+  font-family: 'San Francisco', Arial, Helvetica, sans-serif;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -409,18 +412,125 @@ html, body {
 }
 
 .contact-form button {
-  padding: 0.75rem;
+  background-image: linear-gradient(92.88deg, #3BA55D 9.16%, #2ECC71 43.89%, #27AE60 64.72%);
+  border-radius: 8px;
   border: none;
-  border-radius: 0.375rem;
-  background: #2ecc71;
-  color: #111;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'San Francisco', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3.5rem;
+  padding: 0 1.6rem;
+  text-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px;
+  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #27ae60;
+  box-shadow: rgba(46, 204, 113, 0.6) 0 0 20px;
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* ========== Come Funziona Page ========== */
+/* ========== How It Works ========== */
+.how-it-works-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.how-it-works-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.how-it-works-section .section-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+.how-it-works-section .steps {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .how-it-works-section .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.step-card {
+  background: rgba(49, 88, 70, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+.step-card:hover {
+  transform: translateY(-4px);
+}
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.step-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.step-desc {
+  font-size: 0.9375rem;
+  color: #ddd;
+}
+.section-note {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  color: #eee;
+}
+.scroll-to-form {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* ========== FAQ ========== */
+.faq-section {
+  padding: 1rem 1rem;
+  background: rgba(49, 88, 70, 0.8);
+  color: #fff;
+  border-radius: 25px;
+  min-width: 60vh;
+}
+.faq-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.faq-question {
+  font-weight: 600;
+  cursor: pointer;
+}
+.faq-answer {
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+.more-questions {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.more-questions .link {
+  color: #2ecc71;
+  text-decoration: underline;
 }
 
 /* ========== Altri elementi ========== */
@@ -469,7 +579,7 @@ html, body {
   background-image: url("@/assets/images/book_pattern_512.png");
   background-repeat: repeat;
   background-size: 512px 512px;
-  filter: blur(3px);
+  filter: blur(4px);
   z-index: -1;
 }
 
@@ -483,6 +593,7 @@ html, body {
 }
 
 /* ========== Responsive - Mobile ========== */
+
 @media (max-width: 768px) {
   .hero-container {
     padding-top: 20%;
@@ -557,10 +668,6 @@ html, body {
     padding: 0.75rem;       /* area touch più ampia */
   }
 
-  .contact-form textarea {
-    min-height: 6rem;       /* altezza ragionevole per testo lungo */
-  }
-
   .contact-form input[type="file"] {
     font-size: 0.875rem;
     padding: 0.5rem 0;
@@ -615,13 +722,230 @@ html, body {
   }
 
   .footer-links a:hover {
-    color: #27AE60 !important; /* Verde più scuro per mobile */
+    color: #27AE60 !important;
+  }
+
+  .faq-section {
+    max-width: none;
+    padding: 0.75rem; 
+    margin: 0 auto 1rem;
+  }
+
+  .faq-list {
+    width: 80%;
+  }
+
+  .faq-section .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .faq-item {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .faq-answer {
+    font-size: 0.875rem;
+  }
+  .more-questions {
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
   }
 }
 
+/* ========== Responsive - Tablet ========== */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero-container {
+    padding-top: 10%;
+    padding-bottom: 0%;
+    height: 100%;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .feature-card {
+    padding: 1rem;
+  }
+  .feature-title {
+    font-size: 1rem;
+  }
+  .feature-text {
+    font-size: 0.875rem;
+  }
+
+  .icon-down-arrow {
+    width: 12.5%;
+    height: 12.5%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .primary,
+  .secondary {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu {
+    align-content: left;
+    border-radius: 25px;
+  }
+
+  .navbar-inner {
+    display: flex;
+    max-width: 100%;
+    align-items: unset;
+    justify-content: space-between;
+  }
+
+  .navbar-inner-logo {
+    align-self: center;
+  }
+
+  .navbar-inner-items {
+    align-self: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible;
+    background: transparent;
+    transition: none;
+  }
+
+  .mobile-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-height: none !important;
+    opacity: 1 !important;
+    background: transparent;
+    transition: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .navbar-spacer {
+   height: 10%;
+  }
+
+  .contact-form textarea  {
+    height: 10vh;
+    width: 100%;
+  }
+
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* I primi quattro wrapper (nome, cognome, telefono, email) occupano 1 colonna ciascuno */
+  .contact-form > div:nth-child(-n+4) {
+    grid-column: auto;
+  }
+
+  /* Messaggio (textarea) e file vanno su tutta la larghezza */
+  .contact-form > div:nth-child(5),
+  .contact-form > div:nth-child(6) {
+    grid-column: 1 / -1;  /* span su entrambe le colonne */
+  }
+
+  .contact-form button[type="submit"] {
+    grid-column: 1 / -1;  /* span su tutte le colonne */
+  }
+
+  .footer-container .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* Sezione copyright + WA */
+  .footer-container .footer-content {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  
+  /* Spazio tra i due blocchi su mobile */
+  .footer-container .footer-form-wrapper {
+    width: 100%;
+  }
+
+  .footer-container .footer-content,
+  .footer-container .footer-form-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  /* Pulsante WhatsApp */
+  .footer-container .whatsapp-button {
+    margin-top: 0.5rem;
+  }
+
+  /* CTA Form */
+  .footer-container .contact-form {
+    background: transparent;
+    padding: 0;
+  }
+
+  .footer-form-wrapper {
+    max-width: 100vh; /* Limite massimo larghezza */
+    margin: 0 auto; /* Centratura */
+    padding: 0 2rem; /* Padding laterale */
+  }
+}
 
 /* ========== Responsive - Desktop ========== */
-@media (min-width: 992px) {
+
+@media (min-width: 1201px) {
+  .hero-container {
+    padding-top: 7.5%;
+    padding-bottom: 0%;
+    height: 100%;
+  }
+
   .main-heading {
     font-size: 3rem;
     line-height: 1.2;
