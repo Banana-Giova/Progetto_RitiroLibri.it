@@ -955,6 +955,34 @@ html, body {
     margin: 0 auto; /* Centratura */
     padding: 0 2rem; /* Padding laterale */
   }
+
+  .faq-section {
+    padding: 1rem 1rem;
+    background: rgba(49, 88, 70, 0.8);
+    color: #fff;
+    font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    min-width: 100vh;
+  }
+
+  .faq-section .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .faq-item {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+  }
+  .faq-answer {
+    font-size: 0.875rem;
+  }
+  .more-questions {
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+  }
 }
 
 /* ========== Responsive - Desktop ========== */
