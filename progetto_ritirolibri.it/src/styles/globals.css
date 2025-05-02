@@ -83,6 +83,7 @@ html, body {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 500 !important;
   display: block;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
   letter-spacing: -0.05em;
   margin-bottom: 0.5rem;
@@ -94,6 +95,16 @@ html, body {
   padding-right: 10%;
   border-radius: 25px;
   background-color: rgba(49, 88, 70, 0.8);
+}
+
+.spacer-special {
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 25px;
+  margin: 0 auto;
 }
 
 .icon-down-arrow {
@@ -155,12 +166,14 @@ html, body {
   font-size: 1.125rem;
   font-weight: 600;
   color: #ffffff;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 0.5rem;
 }
 
 .feature-text {
   font-size: 0.9375rem;
   color: #d1d5db;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4;
 }
 
@@ -244,7 +257,6 @@ html, body {
 }
 
 .logo-navbar {
-
   margin: 0;
   padding: 0;
   align-self: right;
@@ -386,6 +398,7 @@ html, body {
 /* ========== Contact Form ========== */
 
 .contact-form {
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: grid;
   grid-template-columns: 1fr;  /* 1 colonna */
   gap: 1rem;
@@ -495,6 +508,7 @@ html, body {
   padding: 1rem 1rem;
   background: rgba(49, 88, 70, 0.8);
   color: #fff;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 25px;
   min-width: 60vh;
 }
@@ -599,6 +613,12 @@ html, body {
     padding-top: 20%;
     padding-bottom: 0%;
     height: 100%;
+  }
+
+  .spacer-special {
+    line-height: 0.5;
+    letter-spacing: -0.05em;
+    margin-bottom: 0rem;
   }
 
   .main-heading {
@@ -796,8 +816,8 @@ html, body {
 
   .primary,
   .secondary {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin-right: 5;
+    margin-left: 5;
   }
 
   .navbar-inner {

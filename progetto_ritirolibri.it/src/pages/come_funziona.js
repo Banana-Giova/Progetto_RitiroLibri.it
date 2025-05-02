@@ -48,9 +48,9 @@ export default function ComeFunziona() {
           <h1 className="main-heading">
             <span className="highlight-text">Come 🚀 Funziona?</span>
 
-            <Spacer y={4}/>
+            <p className="spacer-special">&nbsp;</p>
 
-            <p className="subtitle mt-4">Un processo facile, veloce e senza costi</p>
+            <p className="subtitle">Un processo facile, veloce e senza costi!</p>
           </h1>
 
           <div className="why-choose mt-12 grid gap-6 sm:grid-cols-3">
@@ -100,7 +100,7 @@ export default function ComeFunziona() {
 
           <Spacer y={8}/>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 ">
                 <Button 
                   href="/contatti" 
                   className="primary-cta"
