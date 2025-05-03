@@ -110,7 +110,7 @@ export default function ComeFunziona() {
                 </Button>
           </div>
 
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-emerald-400">
+          <h2>
             Oppure compila il form, è gratuito! <br/>
             Fallo oggi, prima che il valore dei tuoi libri si perda!
           </h2>

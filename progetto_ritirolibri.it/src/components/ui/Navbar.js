@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import Logo_Navbar from "@/assets/images/ritirolibriit_letter_logo.png";
+import Logo_Navbar from "@/assets/images/logo_navbar_optimized_nobg.png";
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
