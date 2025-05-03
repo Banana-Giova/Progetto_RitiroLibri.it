@@ -506,7 +506,7 @@ html, body {
 /* ========== FAQ ========== */
 .faq-section {
   padding: 1rem 1rem;
-  background: rgba(49, 88, 70, 0.8);
+  background: rgba(28, 49, 39, 0.9);
   color: #fff;
   font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 25px;
@@ -547,6 +547,390 @@ html, body {
   text-decoration: underline;
 }
 
+/* ========== About / Chi Siamo ========== */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+}
+
+.about-section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #eee;
+  position: relative;
+}
+
+.about-section .section-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(92.88deg, #3BA55D 9.16%, #2ECC71 43.89%, #27AE60 64.72%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+/* Mission Card */
+.mission-card {
+  background: rgba(49, 88, 70, 0.8);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.values-card {
+  background: rgba(49, 88, 70, 0.8);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stats-card {
+  background: rgba(49, 88, 70, 0.8);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mission-values {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-cards {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.card-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 0.5rem;
+  font-family: 'San Francisco', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+/* Paragraph text */
+.card-text {
+  color: #ccc;
+  line-height: 1.6;
+  flex-grow: 1;
+  align-items: center;
+}
+
+/* Lists inside cards */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* Icons inside lists */
+.card-icon {
+  margin-right: 0.5rem;
+  color: #2ecc71;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.about-card {
+  background: rgba(17, 17, 17, 0.9);
+  border: 1px solid rgba(46, 204, 113, 0.2);
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.values-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.value-item {
+  background: rgba(49, 88, 70, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+}
+
+.value-item .icon {
+  width: 40px;
+  height: 40px;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.stat-item .icon {
+  color: #2ecc71;
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================
+   About‑cards: gradienti calmanti
+   ========================== */
+
+   .mission-card {
+    /* Verde bosco intenso → verde oliva scuro */
+    background: linear-gradient(
+      135deg,
+      rgba(15, 40, 20, 0.9),
+      rgba(50, 60, 35, 0.9)
+    );
+    border-color: rgba(46, 204, 113, 0.2);
+  }
+  
+  .values-card {
+    /* Verde oliva scuro → verde salvia smorzato */
+    background: linear-gradient(
+      135deg,
+      rgba(11, 68, 23, 0.9),
+      rgba(80, 100, 70, 0.9)
+    );
+    border-color: rgba(46, 204, 113, 0.2);
+  }
+  
+  .stats-card {
+    /* Verde salvia smorzato → verde muschio tenue */
+    background: linear-gradient(
+      135deg,
+      rgba(70, 119, 66, 0.9),
+      rgba(100, 120, 90, 0.9)
+    );
+    border-color: rgba(46, 204, 113, 0.2);
+  }
+  
+  .about-divider {
+    display: block;
+    height: 1px;
+    background: rgba(12, 36, 9, 1);
+    margin: 0rem auto;
+    width: 75%;
+    border-radius: 25px;
+  }
+  
+/* ========== Recensioni ========== */
+.reviews-section {
+  margin: 4rem 0;
+}
+
+.reviews-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  background-color:rgba(27, 65, 40, 0.75);
+  border-radius: 25px;
+}
+
+.reviews-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.review-card {
+  background: rgba(16, 51, 35, 0.8);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+}
+
+.review-rating {
+  color: #FFD700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-style: italic;
+  color: #9ce2b9;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.spacer-about {
+  display: none;
+}
+
+/* ========== Contattaci Section ========== */
+.contact-section {
+  padding: 4rem 1rem;
+  color: #eee;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section-subtitle-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  background: rgba(34, 34, 34, 0.9);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Griglia di card */
+.contact-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+}
+
+/* Card base */
+.contact-card {
+  background: rgba(34, 34, 34, 0.9);
+  border: 1px solid rgba(46,204,113,0.2);
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* qui */
+  text-align: left;         /* qui */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Fa sì che ogni figlio della card usi tutta la larghezza disponibile */
+.contact-card > * {
+  width: 100%;
+}
+
+/* Se vuoi mantenere il button centrato, puoi ristilizzarlo singolarmente */
+.contact-card .secondary-cta {
+  align-self: center; /* oppure flex-end, se preferisci a destra */
+  margin-top: 1rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Icona */
+.contact-icon {
+  color: #2ecc71;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Metodo e dettaglio */
+.contact-method {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.contact-detail a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.contact-detail a:hover {
+  color: #2ecc71;
+}
+
+/* Bottone CTA */
+.contact-card .secondary-cta {
+  margin-top: auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+}
+
 /* ========== Altri elementi ========== */
 .navbar-spacer {
   width: 100%;
@@ -571,6 +955,37 @@ html, body {
 .whatsapp-button:hover {
   transform: scale(1.2);
   border-radius: 25px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  background: #27ae60;
 }
 
 /* ========== Layout Background ========== */
@@ -613,6 +1028,13 @@ html, body {
     padding-top: 20%;
     padding-bottom: 0%;
     height: 100%;
+  }
+
+  .back-to-top {
+    bottom: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .spacer-special {
@@ -772,6 +1194,201 @@ html, body {
   .more-questions {
     font-size: 0.875rem;
     margin-top: 1.5rem;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-cards {
+    margin: 0rem;
+  }
+
+  .mission-card {
+    padding: 1.5rem;
+    margin: 0rem;
+    border-radius: 1rem;
+  }
+
+  /* Values Grid */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .value-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .value-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Stats Section */
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .stat-item {
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+
+  /* Reviews Section */
+  .reviews-section {
+    margin: 2rem 0;
+  }
+
+  .reviews-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .review-card {
+    padding: 1.25rem;
+    margin: 0 0.5rem;
+  }
+
+  .review-rating {
+    font-size: 1.1rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .review-author {
+    font-size: 0.85rem;
+  }
+
+  /* Mission Text */
+  .mission-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* Value Icons */
+  .value-icon-container {
+    width: 56px;
+    height: 56px;
+  }
+
+  .value-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Card Adjustments */
+  .card-title {
+    font-size: 1.3rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card-list li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .spacer-about {
+    display: block;
+    visibility: hidden;
+    height: 2rem;
+  }
+
+  .about-divider {
+    width: 90%;
+    margin: 1.5rem auto;
+    margin-bottom: 0rem;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-subtitle-light {
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin: 0 auto 1.5rem;
+    max-width: 90%;
+    line-height: 1.4;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-method {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-detail {
+    font-size: 0.95rem;
+  }
+
+  .contact-card .secondary-cta {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Disabilita hover effects su mobile */
+  .contact-card:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 
@@ -983,6 +1600,10 @@ html, body {
     font-size: 0.875rem;
     margin-top: 1.5rem;
   }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ========== Responsive - Desktop ========== */
@@ -1153,5 +1774,9 @@ html, body {
     max-width: 100vh; /* Limite massimo larghezza */
     margin: 0 auto; /* Centratura */
     padding: 0 2rem; /* Padding laterale */
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

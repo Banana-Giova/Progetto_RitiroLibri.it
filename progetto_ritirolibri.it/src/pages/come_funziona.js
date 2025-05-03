@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Layout from '@/components/layout';
-import { BookCheck, Clock, Camera, Truck, MessageCircleQuestion, MailCheck, ArrowBigDown } from 'lucide-react';
+import { Clock, Camera, Truck, MessageCircleQuestion, MailCheck, ArrowBigDown } from 'lucide-react';
 import Button from '@/components/ui/button';
 import { Spacer } from '@heroui/spacer';
 
@@ -102,7 +101,7 @@ export default function ComeFunziona() {
 
           <div className="text-center mt-8 ">
                 <Button 
-                  href="/contatti" 
+                  href="/contact" 
                   className="primary-cta"
                   type="primary"
                 >
@@ -112,7 +111,8 @@ export default function ComeFunziona() {
           </div>
 
           <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 text-emerald-400">
-            Oppure compila il form, è gratuito!
+            Oppure compila il form, è gratuito! <br/>
+            Fallo oggi, prima che il valore dei tuoi libri si perda!
           </h2>
           <ArrowBigDown className="icon-down-arrow" />
         </div>
