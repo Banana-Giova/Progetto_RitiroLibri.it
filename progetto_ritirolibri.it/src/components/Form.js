@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Spacer } from "@heroui/spacer";
 
-export default function ContactForm() {
+const ContactForm = () => {
   const [form, setForm] = useState({
     nome: '',
     cognome: '',
@@ -10,37 +10,24 @@ export default function ContactForm() {
     messaggio: '',
   });
 
-  // Per eventuale file upload (non incluso nell’email mailto)
-  const [file, setFile] = useState(null);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((f) => ({ ...f, [name]: value }));
   };
 
-  const handleFile = (e) => {
-    setFile(e.target.files[0]);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Costruisci il body: ogni campo su nuova riga
     const bodyLines = [
-      `Nome: ${form.nome}`,
-      `Cognome: ${form.cognome}`,
-      `Telefono: ${form.telefono}`,
-      `Email: ${form.email}`,
-      `Messaggio: ${form.messaggio}`,
-      file ? `(Foto o lista allegata via allegato manuale)` : '',
+      `Cliente: ${form.nome.trim()}` + ` ${form.cognome.trim()}`,
+      `Telefono: ${form.telefono.trim()}`,
+      `Email: ${form.email.trim()}`,
+      `\n${(form.messaggio != ``) ? form.messaggio : "Ciao, vorrei liberarmi velocemente di alcuni libri usati. Potete aiutarmi?"}`,
     ];
-    const body = encodeURIComponent(bodyLines.join('\n'));
-
-    // Parametri mailto: destinatario, subject e body
-    const mailto = `mailto:ritirolibri@esempio.it?subject=Richiesta%20Ritiro&body=${body}`;
-
-    // Apri il client email
-    window.location.href = mailto;
+    const prefillMessage = encodeURIComponent(bodyLines.join('\n'));
+    const url_redirect = `https://wa.me/3514229421?text=${prefillMessage}`
+    
+    window.open(url_redirect);
   };
 
   return (
@@ -62,10 +49,6 @@ export default function ContactForm() {
         <input name="email" type="email" required value={form.email} onChange={handleChange} />
       </div>
       <div>
-        <label>Carica foto o elenco libri (opzionale)</label>
-        <input type="file" onChange={handleFile} />
-      </div>
-      <div>
         <label>Messaggio</label>
         <textarea
           name="messaggio"
@@ -79,3 +62,5 @@ export default function ContactForm() {
     </form>
   );
 }
+
+export default ContactForm;

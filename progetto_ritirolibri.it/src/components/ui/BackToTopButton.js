@@ -1,10 +1,8 @@
-// components/ui/BackToTopButton.js
-'use client';
-
 import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
+import Button from '@/components/ui/button';
 
-export default function BackToTopButton() {
+const BackToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -15,7 +13,6 @@ export default function BackToTopButton() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  // Render sempre il button, ma con classe "visible" o meno
   return (
     <button
       className={`back-to-top${visible ? ' visible' : ''}`}
@@ -26,3 +23,5 @@ export default function BackToTopButton() {
     </button>
   );
 }
+
+export default BackToTopButton;

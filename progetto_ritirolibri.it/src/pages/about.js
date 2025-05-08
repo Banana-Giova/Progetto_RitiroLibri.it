@@ -35,7 +35,7 @@ const reviews = [
   },
 ];
 
-export default function About() {
+const About = () => {
   return (
     <div className='about-container'>
       <Head>
@@ -115,3 +115,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

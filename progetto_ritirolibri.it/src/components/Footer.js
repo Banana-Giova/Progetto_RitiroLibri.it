@@ -1,4 +1,7 @@
 import ContactForm from "./Form";
+import Button from '@/components/ui/button';
+import { Spacer } from "@heroui/spacer";
+import { Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,6 +12,26 @@ const Footer = () => {
         <div className="footer-form-wrapper">
           <ContactForm />
         </div>
+
+        <Spacer y={4} />
+
+        <section className="footer-contact-section">
+          <p className="footer-minitext">oppure</p>
+          <Button
+              href={`https://wa.me/3514229421}`}
+              target="_blank"
+              className="secondary-cta"
+              type="secondary"
+            >
+              <Phone className="icon" />
+              &nbsp;Chiamaci
+          </Button>
+
+          <Button href="mailto:info@ritirolibri.it" className="secondary-cta" type="secondary">
+            <Mail className="icon" />
+            &nbsp;Inviaci una email
+          </Button>
+        </section>
 
         <hr className="footer-divider" />
 

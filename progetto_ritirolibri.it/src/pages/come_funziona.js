@@ -3,7 +3,7 @@ import { Clock, Camera, Truck, MessageCircleQuestion, MailCheck, ArrowBigDown } 
 import Button from '@/components/ui/button';
 import { Spacer } from '@heroui/spacer';
 
-export default function ComeFunziona() {
+const ComeFunziona = () => {
   const faq = [
     {
       q: 'Cosa succede ai libri che non acquistate?',
@@ -120,3 +120,5 @@ export default function ComeFunziona() {
       </div>
   );
 }
+
+export default ComeFunziona;

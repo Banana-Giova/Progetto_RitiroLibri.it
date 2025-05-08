@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import { Phone, MessageCircle, Mail } from 'lucide-react';
 import Button from '@/components/ui/button';
+import Link from 'next/link';
 
-export default function Contact() {
+const Contact = () => {
+  const prefillMessage = encodeURIComponent("Ciao, vorrei liberarmi velocemente di alcuni libri usati. Potete aiutarmi?");
+
   return (
     <section className="contact-section">
       <Head>
@@ -24,12 +27,13 @@ export default function Contact() {
             <Phone className="contact-icon" />
             <h3 className="contact-method">WhatsApp & Telefono</h3>
             <p className="contact-detail">
-              <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">
+              <Link href={`https://wa.me/3514229421?text=${prefillMessage}`} target="_blank" rel="noopener noreferrer">
                 +39 351 422 9421
-              </a>
+              </Link>
             </p>
             <Button
-              href="https://wa.me/3514229421"
+              href={`https://wa.me/3514229421?text=${prefillMessage}`}
+              target="_blank"
               className="secondary-cta"
               type="secondary"
             >
@@ -52,7 +56,7 @@ export default function Contact() {
             <Mail className="contact-icon" />
             <h3 className="contact-method">Email</h3>
             <p className="contact-detail">
-              <a href="mailto:info@ritirolibri.it">Invia una mail a info@ritirolibri.it</a>
+              <Link href="mailto:info@ritirolibri.it">Invia una mail a info@ritirolibri.it</Link>
             </p>
             <Button href="mailto:info@ritirolibri.it" className="secondary-cta" type="secondary">
               Inviaci una email
@@ -63,3 +67,5 @@ export default function Contact() {
     </section>
 );
 }
+
+export default Contact;
