@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Layout from '@/components/layout'
 
 const CookiePolicy = () => {
   return (
-    <Layout>
+    <div className='cookie-container'>
       <Head>
         <title>RitiroLibri.it | Cookie Policy</title>
         <meta
@@ -16,7 +15,7 @@ const CookiePolicy = () => {
         <h1 className="section-title">Cookie Policy di RitiroLibri.it</h1>
         <p className="section-subtitle">
           <strong>Ultimo aggiornamento:</strong> 8 maggio 2025<br/>
-          <strong>Indirizzo sito:</strong> https://ritirolibri.it
+          <strong>Indirizzo sito:</strong> https://www.ritirolibri.it
         </p>
 
         <h2 className="subtitle">1. Cosa sono i cookie?</h2>
@@ -101,7 +100,7 @@ const CookiePolicy = () => {
           accettazione dei cookie.
         </p>
       </section>
-    </Layout>
+    </div>
   )
 }
 
