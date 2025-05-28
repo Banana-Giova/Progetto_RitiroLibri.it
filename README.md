@@ -62,10 +62,6 @@
 - **Integrazioni**:
   - Google Analytics 4 (`NEXT_PUBLIC_GA4_ID`)
   - Meta Pixel (`NEXT_PUBLIC_META_PIXEL_ID`)
-- **Pagine Legali**:
-  - Cookie Policy
-  - Privacy Policy
-  - Note Legali
 - **Componenti riutilizzabili**: Button, Card, Divider, Back-to-Top
 
 ---
@@ -87,8 +83,8 @@
 
 1. **Clona il repository**  
    ```bash
-   git clone https://github.com/tuo-username/ritiro-libro.git
-   cd ritiro-libro
+   git clone https://github.com/Banana-Giova/Progetto_RitiroLibri.it.git
+   cd Progetto_RitiroLibri.it
    ```
 
 2. **Installa le dipendenze**  
@@ -99,7 +95,7 @@
    ```
 
 3. **Configura le variabili d’ambiente**  
-   Crea un file `.env.local` in root:
+   Crea un file `.env.local` in root inserendo i tuoi dati:
    ```env
    NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
    NEXT_PUBLIC_META_PIXEL_ID=1234567890
@@ -148,22 +144,13 @@ Consigli di deployment:
 ## ✅ Testing e verifiche
 
 - **Cross-browser**: Chrome / Firefox / Safari / Edge
-- **Mobile-first**: verifica su iOS/Android e tablet (≤768px, 769–1200px, >1200px)
+- **Mobile-first**: Verificato su iOS/Android e tablet (≤768px, 769–1200px, >1200px)
 - **Accessibilità**:  
   – `aria-label` su button hamburger  
   – colori contrastanti (WCAG AA)  
   – `lang="it"` e meta tag `<Head>`
 - **Performance**: Lighthouse  
-- **SEO**: Titoli, description, favicon, canonical se necessario
-
----
-
-## 📬 Contatti
-
-> **RitiroLibri.it** – Servizio di ritiro gratuito di libri usati a domicilio  
-> **Sito Web**: https://ritirolibri.it  
-> **Email**: info@ritirolibri.it  
-> **WhatsApp**: +39 123 456 789  
+- **SEO**: Titoli, description, favicon, meta tags
 
 ---
 
