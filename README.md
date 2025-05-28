@@ -7,34 +7,45 @@
 ## 📂 Struttura del progetto
 
 ```
-/
-├── components
-│   ├── Footer.js
-│   ├── Form.js
-│   ├── Hero.js
-│   ├── Layout.js
-│   ├── CookieConsentBanner.js
-│   └── ui
-│       ├── Navbar.js
-│       ├── WhatsAppButton.js
-│       └── Button.js
-├── pages
-│   ├── _app.js
-│   ├── _document.js
-│   ├── index.js                # Home
-│   ├── about.js
-│   ├── come-funziona.js
-│   ├── cookie-policy.js
-│   ├── privacy-policy.js
-│   └── note-legali.js
-├── public
-│   ├── images/…                # pattern di sfondo, logo, icone
-│   └── icons/…                 # favicon, whatsapp-icon
-├── styles
-│   └── globals.css             # tutto il CSS globale
-├── .env.local                  # NEXT_PUBLIC_GA4_ID, NEXT_PUBLIC_META_PIXEL_ID
+├── eslint.config.mjs
+├── jsconfig.json
+├── next.config.mjs
 ├── package.json
-└── README.md                   # ← questo file
+├── package-lock.json
+├── postcss.config.mjs
+├── progetto_ritirolibri.it
+├── public
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── icons
+│   │   └── images
+│   ├── components
+│   │   ├── CookieConsentBanner.js
+│   │   ├── Footer.js
+│   │   ├── Form.js
+│   │   ├── Hero.js
+│   │   ├── layout.js
+│   │   └── ui
+│   │       ├── BackToTopButton.js
+│   │       ├── button.js
+│   │       ├── Navbar.js
+│   │       └── WhatsAppButton.js
+│   ├── pages
+│   │   ├── about.js
+│   │   ├── _app.js
+│   │   ├── come_funziona.js
+│   │   ├── contact.js
+│   │   ├── cookie-policy.js
+│   │   ├── _document.js
+│   │   ├── index.js
+│   │   ├── note-legali.js
+│   │   ├── privacy-policy.js
+│   │   └── termini-e-condizioni.js
+│   └── styles
+│       └── globals.css
+└── tailwind.config.js
+
 ```
 
 ---
