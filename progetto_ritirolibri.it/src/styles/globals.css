@@ -162,7 +162,7 @@ a:visited {
 
 .icon-wrapper {
   background: rgba(46, 204, 113, 0.2);
-  border-radius: 9999px; /* pill */
+  border-radius: 9999px;
   padding: 0.75rem;
   margin-bottom: 1rem;
 }
