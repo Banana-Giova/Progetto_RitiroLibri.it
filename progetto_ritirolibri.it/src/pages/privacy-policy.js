@@ -15,13 +15,12 @@ const PrivacyPolicy = () => {
         <h1 className="section-title">Privacy Policy di RitiroLibri.it</h1>
         <p className="section-subtitle">
           <strong>Ultimo aggiornamento:</strong> 8 maggio 2025<br/>
-          <strong>Indirizzo sito:</strong> https://ritirolibri.it
+          <strong>Indirizzo sito:</strong> https://www.ritirolibri.it
         </p>
 
         <h2 className="subtitle">1. Titolare del Trattamento</h2>
         <p>
-          Il titolare del trattamento è RitiroLibri S.r.l., con sede legale in Via dei Librai 10, 00100 Roma (RM),
-          P.IVA 12345678901.
+          Il titolare del trattamento è RitiroLibri S.r.l.
         </p>
 
         <h2 className="subtitle">2. Dati raccolti</h2>
@@ -55,7 +54,7 @@ const PrivacyPolicy = () => {
         <p>
           In qualsiasi momento l’utente può esercitare i diritti di accesso, rettifica, cancellazione,
           limitazione, portabilità e opposizione, inviando richiesta a{' '}
-          <a href="mailto:privacy@ritirolibri.it">privacy@ritirolibri.it</a>.
+          <a href="mailto:info@ritirolibri.it">info@ritirolibri.it</a>.
         </p>
 
         <h2 className="subtitle">7. Comunicazione a terzi</h2>

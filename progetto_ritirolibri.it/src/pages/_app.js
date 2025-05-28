@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/icon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo_ritirolibriit_180x180.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo_ritirolibriit_32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo_ritirolibriit_16x16.png" />
       </Head>

@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/ui/Navbar';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import BackToTopButton from '@/components/ui/BackToTopButton';
+import CookieConsentBanner from '@/components/CookieConsentBanner';
 
 export default function Layout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
       <Footer />
       <WhatsAppButton />
       <BackToTopButton />
+      <CookieConsentBanner />
     </div>
   );
 }

@@ -89,7 +89,7 @@ const CookiePolicy = () => {
         <h2 className="subtitle">6. Contatti</h2>
         <p>
           Per domande sulla presente Cookie Policy, scrivi a{' '}
-          <a href="mailto:privacy@ritirolibri.it">privacy@ritirolibri.it</a>
+          <a href="mailto:info@ritirolibri.it">info@ritirolibri.it</a>
         </p>
 
         <hr className="divider" />

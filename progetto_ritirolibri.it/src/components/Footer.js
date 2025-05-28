@@ -18,7 +18,7 @@ const Footer = () => {
         <section className="footer-contact-section">
           <p className="footer-minitext">oppure</p>
           <Button
-              href={`https://wa.me/3514229421}`}
+              href={`tel:+39 351 422 9421`}
               target="_blank"
               className="secondary-cta"
               type="secondary"
@@ -37,11 +37,10 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="footer-legal">
-            <p>RitiroLibri S.r.l.</p>
-            <p>Via dei Librai 10, 00100 Roma (RM)</p>
-            <p>P.IVA 12345678901 | REA RM-1234567</p>
-            <p>Capitale sociale €10.000 i.v.</p>
-            <p>PEC: ritirolibri@pec.it</p>
+            <p>RitiroLibri S.r.l. &copy;</p>
+            <p>Sede ufficiale a Roma (RM)</p>
+            <a href="mailto:info@ritirolibri.it" className="footer-link">Info: info@ritirolibri.it</a>
+            <a href="mailto:ritirolibri@pec.it" className="footer-link">PEC: ritirolibri@pec.it</a>
           </div>
 
           <div className="footer-links">
