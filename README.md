@@ -1,6 +1,6 @@
 # RitiroLibri.it
 
-> **RitiroLibri.it** è una moderna landing page sviluppata con Next.js, pensata per offrire un servizio di ritiro gratuito di libri usati a domicilio. Questo repository contiene l’intero frontend, responsive e accessibile, completo di sezione Hero, “Come funziona?”, contatti, form di richiesta e tutte le pagine legali (Cookie Policy, Privacy Policy, Note Legali).
+> **RitiroLibri.it** è una moderna landing page sviluppata con Next.js, pensata per offrire un servizio di ritiro gratuito di libri usati a domicilio. Questo repository contiene l’intero frontend, responsive e accessibile, completo di sezione Hero, “Come funziona?”, contatti, form di richiesta e tutte le pagine legali.
 
 ---
 
