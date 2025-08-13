@@ -3,7 +3,6 @@ import Balancer from "react-wrap-balancer";
 import { Spacer } from "@heroui/spacer";
 import { Camera, ArrowBigRight, ArrowBigDown, Clock, BookCheck, Truck } from "lucide-react";
 import Button from "@/components/ui/button";
-import Logo from "@/assets/images/logo_ritirolibriit.png";
 
 const Hero = () => {
 
@@ -30,7 +29,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="logo-container">
           <Image
-            src={Logo}
+            src={"/images/logo_ritirolibriit.png"}
             width={160}
             height={160}
             alt="RitiroLibri.it Logo"
@@ -52,23 +51,13 @@ const Hero = () => {
             <Camera className="icon" />
             &nbsp;Prenota il ritiro gratuito
           </Button>
-          <Button href="/come_funziona" className="secondary-cta" type="secondary">
+          <Button href="/come_funziona/index.html" className="secondary-cta" type="secondary">
             <ArrowBigRight className="icon" />
             &nbsp;Scopri come funziona
           </Button>
         </div>
 
         <Spacer y={8} />
-
-        {/*
-        <p className="subtitle">
-          <Balancer>
-            Il modo più semplice e veloce per liberare spazio senza alcuno sforzo!
-          </Balancer>
-        </p>
-
-        <Spacer y={8} />
-        */}
 
         <div className="why-choose mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map(({ Icon, title, text }) => (

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 
 export default function TerminiECondizioni() {
   return (
@@ -44,7 +45,7 @@ export default function TerminiECondizioni() {
 
           <h2 className="subtitle">5. Privacy e trattamento dati</h2>
           <p className="policy-content">
-            Il trattamento dei tuoi dati è disciplinato dalla nostra <a href="/privacy-policy">Privacy Policy</a>.
+            Il trattamento dei tuoi dati è disciplinato dalla nostra <Link href="/privacy-policy">Privacy Policy</Link>.
           </p>
 
           <h2 className="subtitle">6. Diritto di recesso</h2>
@@ -62,7 +63,7 @@ export default function TerminiECondizioni() {
           <hr className="divider" />
 
           <p className="small-text">
-            Consulta anche le nostre <a href="/cookie-policy">Cookie Policy</a> e <a href="/note-legali">Note Legali</a>.
+            Consulta anche le nostre <Link href="/cookie-policy">Cookie Policy</Link> e <Link href="/note-legali">Note Legali</Link>.
           </p>
         </section>
       </div>

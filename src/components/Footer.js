@@ -2,6 +2,7 @@ import ContactForm from "./Form";
 import Button from '@/components/ui/button';
 import { Spacer } from "@heroui/spacer";
 import { Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -39,15 +40,15 @@ const Footer = () => {
           <div className="footer-legal">
             <p>RitiroLibri S.r.l. &copy;</p>
             <p>Sede ufficiale a Roma (RM)</p>
-            <a href="mailto:info@ritirolibri.it" className="footer-link">Info: info@ritirolibri.it</a>
-            <a href="mailto:ritirolibri@pec.it" className="footer-link">PEC: ritirolibri@pec.it</a>
+            <Link href="mailto:info@ritirolibri.it" className="footer-link">Info: info@ritirolibri.it</Link>
+            <Link href="mailto:ritirolibri@pec.it" className="footer-link">PEC: ritirolibri@pec.it</Link>
           </div>
 
           <div className="footer-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/cookie-policy">Cookie Policy</a>
-            <a href="/termini-e-condizioni">Termini e Condizioni</a>
-            <a href="/note-legali">Note Legali</a>
+            <Link href="/privacy-policy/index.html">Privacy Policy</Link>
+            <Link href="/cookie-policy/index.html">Cookie Policy</Link>
+            <Link href="/termini-e-condizioni/index.html">Termini e Condizioni</Link>
+            <Link href="/note-legali/index.html">Note Legali</Link>
           </div>
         </div>
       </footer>

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 
 const CookiePolicy = () => {
   return (
@@ -77,8 +78,8 @@ const CookiePolicy = () => {
           <li><strong>Browser</strong>: segui le istruzioni per disabilitare i cookie (Chrome, Firefox, Edge, Safari).</li>
           <li><strong>Opt-out servizi terzi</strong>:
             <ul className="list-nested">
-              <li>Google Analytics → <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">ga-optout</a></li>
-              <li>Facebook Pixel → <a href="https://www.facebook.com/help/568137493302217" target="_blank">fb-optout</a></li>
+              <li>Google Analytics → <Link href="https://tools.google.com/dlpage/gaoptout" target="_blank">ga-optout</Link></li>
+              <li>Facebook Pixel → <Link href="https://www.facebook.com/help/568137493302217" target="_blank">fb-optout</Link></li>
             </ul>
           </li>
         </ul>
@@ -89,13 +90,13 @@ const CookiePolicy = () => {
         <h2 className="subtitle">6. Contatti</h2>
         <p>
           Per domande sulla presente Cookie Policy, scrivi a{' '}
-          <a href="mailto:info@ritirolibri.it">info@ritirolibri.it</a>
+          <Link href="mailto:info@ritirolibri.it">info@ritirolibri.it</Link>
         </p>
 
         <hr className="divider" />
 
         <p className="small-text">
-          Questa policy si integra con la <a href="/privacy-policy">Privacy Policy</a> di RitiroLibri.it.
+          Questa policy si integra con la <Link href="/privacy-policy">Privacy Policy</Link> di RitiroLibri.it.
           L’uso continuato del sito dopo aver modificato le impostazioni o chiuso il banner implica
           accettazione dei cookie.
         </p>

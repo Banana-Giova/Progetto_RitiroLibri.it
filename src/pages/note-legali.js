@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 
 export default function NoteLegali() {
   return (
@@ -44,7 +45,7 @@ export default function NoteLegali() {
           <hr className="divider" />
 
           <p className="small-text">
-            Per dettagli sulla gestione dei tuoi dati personali, consulta la nostra <a href="/privacy-policy">Privacy Policy</a>.
+            Per dettagli sulla gestione dei tuoi dati personali, consulta la nostra <Link href="/privacy-policy">Privacy Policy</Link>.
           </p>
         </section>
       </div>

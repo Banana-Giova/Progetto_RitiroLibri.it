@@ -101,7 +101,7 @@ const ComeFunziona = () => {
 
           <div className="text-center mt-8 ">
                 <Button 
-                  href="/contact" 
+                  href="/contact/index.html" 
                   className="primary-cta"
                   type="primary"
                 >

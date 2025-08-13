@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function CookieConsentBanner() {
   const STORAGE_KEY = 'cookieConsentAccepted';
@@ -31,7 +32,7 @@ export default function CookieConsentBanner() {
           Questo sito utilizza <strong>cookie tecnici</strong> e <strong>cookie di terze parti</strong> (es. Google Analytics)  
           per offrirti la migliore esperienza di navigazione.  
           Cliccando su “Accetta” acconsenti all’uso dei cookie.  
-          Per maggiori dettagli consulta la nostra <a href="/cookie-policy">Cookie Policy</a>.
+          Per maggiori dettagli consulta la nostra <Link href="/cookie-policy">Cookie Policy</Link>.
         </p>
         <button className="cookie-banner-button" onClick={handleAccept}>
           Accetta

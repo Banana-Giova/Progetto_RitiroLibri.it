@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import Logo_Navbar from "@/assets/images/logo_navbar_optimized_nobg.png";
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -10,9 +9,9 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/come_funziona', label: 'Come Funziona?' },
-    { href: '/about', label: 'Chi Siamo' },
-    { href: '/contact', label: 'Contattaci' },
+    { href: '/come_funziona/index.html', label: 'Come Funziona?' },
+    { href: '/about/index.html', label: 'Chi Siamo' },
+    { href: '/contact/index.html', label: 'Contattaci' },
   ];
 
   return (
@@ -20,13 +19,15 @@ export default function Navbar() {
       <div className="navbar-inner">
         <div className='navbar-inner-logo'>
             <div className="logo-navbar">
-            <a href='/' label='Homepage'>
+            <Link href='/' label='Homepage'>
                 <Image
-                src={Logo_Navbar}
+                src={"/images/logo_navbar_optimized_nobg.png"}
+                width={128}
+                height={32}
                 alt="RitiroLibri.it Navbar"
                 className="logo-navbar"
                 />
-            </a>
+            </Link>
             </div>
         </div>
         <div className='navbar-inner-items'>

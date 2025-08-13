@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
@@ -54,7 +55,7 @@ const PrivacyPolicy = () => {
         <p>
           In qualsiasi momento l’utente può esercitare i diritti di accesso, rettifica, cancellazione,
           limitazione, portabilità e opposizione, inviando richiesta a{' '}
-          <a href="mailto:info@ritirolibri.it">info@ritirolibri.it</a>.
+          <Link href="mailto:info@ritirolibri.it">info@ritirolibri.it</Link>.
         </p>
 
         <h2 className="subtitle">7. Comunicazione a terzi</h2>
@@ -72,7 +73,7 @@ const PrivacyPolicy = () => {
         <hr className="divider" />
 
         <p className="small-text">
-          Per ulteriori dettagli, consulta anche la nostra <a href="/cookie-policy">Cookie Policy</a>.
+          Per ulteriori dettagli, consulta anche la nostra <Link href="/cookie-policy">Cookie Policy</Link>.
         </p>
       </section>
     </div>
